@@ -17,7 +17,7 @@ def start_game():
         guess = int(input("Enter your guess: "))
         attempts += 1
         if guess == num:
-            print(f"Got it! the number was {num}, you had {attempts} attempts.")
+            print(f"Got it! the number was {num}, your attempt count is {attempts}")
             print("Thanks for playing :) ")
             break
         elif guess < num:
