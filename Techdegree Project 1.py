@@ -14,9 +14,11 @@ def start_game():
             print(f"Got it! the number was {num}, your attempt count is {attempts}")
             print("Thanks for playing :) ")
             break
+        elif guess not in range(1,11):
+            print('Choose a number between 1 and 10')
         elif guess < num:
             print("It's higher ")
-        else:
+        elif guess > num:
             print("It's lower ")
 
 
